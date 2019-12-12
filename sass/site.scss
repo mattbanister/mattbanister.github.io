@@ -1,0 +1,85 @@
+@import "normalize";
+
+$break-large: 800px;
+$main-font-family: "Baskerville", serif;
+$code-font-family: "Fira Code", monospace;
+$nav-font-family: "Montserrat", sans-serif;
+
+body {
+    font-family: $main-font-family;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+pre {
+    padding-left: 1rem;
+    font-family: $code-font-family;
+    font-size: 1rem;
+    overflow: auto;
+}
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    width: 90%;
+    @media screen and (min-width: $break-large) {
+        width: 50%;
+    }
+}
+
+.date {
+    font-size: 0.75rem;
+    margin-top: 0;
+}
+
+.paginator {
+    a {
+        text-decoration: none;
+        font-family: $nav-font-family;
+        color: black;
+    }
+    .paginator-next {
+        float: right;
+    }
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    border-top: gray 1px solid;
+}
+
+.back-nav {
+    a {
+        text-decoration: none;
+        font-family: $nav-font-family;
+        color: black;
+    }
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 1rem;
+    border-top: gray 1px solid;
+}
+
+.page-link {
+    margin-bottom: 0.1rem;
+}
+
+.menu {
+    ul {
+        float: right;
+        li {
+            display: inline-block;
+            margin-right: 1rem;
+            a {
+                text-decoration: none;
+                font-family: $nav-font-family;
+                color: black;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,10 @@
+{% extends "index.html" %}
+{% block content %}
+<h3>{{ page.title }}</h3>
+<p>{{ page.date | date(format="%Y-%m-%d") }}</p>
+<p>{{ page.content | safe }}</p>
+<div class="back-nav">
+    <a href="javascript:goBack()">&lt; Back</a>
+</div>
+{% endblock content %}
+

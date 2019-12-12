@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <div>
+        <h2>{{ term.name }}</h2>
+        {% for page in term.pages %}
+            <div>
+                <span>{{ page.date | date(format="%F") }}</span>
+                <span>
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </span>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock content %}

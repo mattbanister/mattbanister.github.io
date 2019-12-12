@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ get_url(path="site.css", trailing_slash=false) }}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Baskervville&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/firacode/distr/fira_code.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="content">
+        <nav class="menu">
+            <ul>
+                {% for item in config.extra.menu %}
+                    <li>
+                        <a href="{{ item.url | replace(from="$BASE_URL", to=config.base_url) }}">
+                            {{ item.name }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
+        <h1>blog</h1>
+        {% block content %}
+        <div>
+            {% for page in paginator.pages %}
+                <div>
+                    <h3 class="page-link">
+                        {{ page.title }}
+                    </h3>
+                    <span class="date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                </div>
+                <div>
+                    {{ page.summary | safe }}
+                </div>
+                <div class="read-more">
+                    <a href="{{ page.permalink }}">Read more...</a>
+                </div>
+            {% endfor %}
+        </div>
+        <nav class="paginator">
+            {% if paginator.previous %}
+                <a class="paginator-prev" href="{{ paginator.previous }}">‹ Previous</a>
+            {% endif %}
+            {% if paginator.next %}
+                <a class="paginator-next" href="{{ paginator.next }}">Next ›</a>
+            {% endif %}
+        </nav>
+        {% endblock content %}
+
+    </div>
+    <script type="text/javascript" src="{{ get_url(path="main.js", trailing_slash=false) }}" ></script>
+</body>
+
+</html>

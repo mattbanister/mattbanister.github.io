@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+    {% block content %}
+        <div>
+            <div>
+                {{ terms | length }} categories in total
+            </div>
+            <div>
+                {% for category in terms %}
+                    <a href="{{ category.permalink }}">
+                        {{ category.name }}
+                        <span>{{ category.pages | length }}</span>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    {% endblock content %}
