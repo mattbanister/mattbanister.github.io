@@ -4,4 +4,8 @@
     <div class="about">
         {{ page.content | safe }}
     </div>
+    <div class="about-links"> 
+        <a href={{ config.extra.github_url }} target="_blank"><i class="fab fa-github"></i></a>
+        <a href={{ config.extra.linkedin_url }} target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
 {% endblock content %}

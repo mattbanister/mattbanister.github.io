@@ -23,21 +23,23 @@
                 {% endfor %}
             </ul>
         </nav>
-        <h1>blog</h1>
+        <h1>pinback's diary</h1>
         {% block content %}
         <div>
             {% for page in paginator.pages %}
-                <div>
-                    <h3 class="page-link">
-                        {{ page.title }}
-                    </h3>
-                    <span class="date">{{ page.date | date(format="%Y-%m-%d") }}</span>
-                </div>
-                <div>
-                    {{ page.summary | safe }}
-                </div>
-                <div class="read-more">
-                    <a href="{{ page.permalink }}">Read more...</a>
+                <div class="listing">
+                    <div>
+                        <h3 class="page-title">
+                            {{ page.title }}
+                        </h3>
+                        <span class="date">{{ page.date | date(format="%Y-%m-%d") }}</span>
+                    </div>
+                    <div>
+                        {{ page.summary | safe }}
+                    </div>
+                    <div class="read-more">
+                        <a href="{{ page.permalink }}">Read more...</a>
+                    </div>
                 </div>
             {% endfor %}
         </div>
@@ -52,6 +54,7 @@
         {% endblock content %}
 
     </div>
+    <script src="https://kit.fontawesome.com/de960a27f9.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ get_url(path="main.js", trailing_slash=false) }}" ></script>
 </body>
 

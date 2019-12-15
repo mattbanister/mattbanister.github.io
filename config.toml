@@ -23,3 +23,7 @@ menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/about", name = "About"},
 ]
+
+linkedin_url = "https://www.linkedin.com/in/matthew-banister-15009921/"
+github_url = "https://github.com/mattbanister"
+

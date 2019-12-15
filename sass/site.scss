@@ -21,6 +21,28 @@ pre {
     overflow: auto;
 }
 
+a {
+    &:link {
+        text-decoration: none;
+        color: darkblue;
+    }
+  
+    &:visited {
+        text-decoration: none;
+        color: darkcyan;
+    }
+  
+    &:hover {
+        text-decoration: underline;
+        color: darkcyan;
+    }
+  
+    &:active {
+        text-decoration: underline;
+        color: darkcyan;
+    }
+}
+
 .content {
     margin-left: auto;
     margin-right: auto;
@@ -30,6 +52,10 @@ pre {
     @media screen and (min-width: $break-large) {
         width: 50%;
     }
+}
+
+.listing {
+    margin-bottom: 3rem;
 }
 
 .date {
@@ -64,7 +90,7 @@ pre {
     border-top: gray 1px solid;
 }
 
-.page-link {
+.page-title {
     margin-bottom: 0.1rem;
 }
 
@@ -80,6 +106,20 @@ pre {
                 color: black;
             }
         }
+    }    
+}
+
+.about-links {
+    width: 8rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2rem;
+    i {
+        padding-right: 0.5rem;
     }
-    
+    a {
+        text-decoration: none;
+        font-family: $nav-font-family;
+        color: black;
+    }
 }
