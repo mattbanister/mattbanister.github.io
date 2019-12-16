@@ -10,10 +10,6 @@ body {
     font-weight: 200;
 }
 
-h1, h2, h3, h4 {
-    font-weight: 500;
-}
-
 pre {
     padding-left: 1rem;
     font-family: $code-font-family;
@@ -41,6 +37,10 @@ a {
         text-decoration: underline;
         color: darkcyan;
     }
+}
+
+.heading {
+    font-weight: 500;
 }
 
 .page-title {
