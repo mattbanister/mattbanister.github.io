@@ -20,8 +20,8 @@ taxonomies = [
 # Put all your custom variables here
 
 menu = [
-    {url = "$BASE_URL", name = "Home"},
-    {url = "$BASE_URL/about", name = "About"},
+    {url = "$BASE_URL", name = "home"},
+    {url = "$BASE_URL/about", name = "about"},
 ]
 
 linkedin_url = "https://www.linkedin.com/in/matthew-banister-15009921/"

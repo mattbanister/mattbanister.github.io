@@ -38,7 +38,7 @@
                         {{ page.summary | safe }}
                     </div>
                     <div class="read-more">
-                        <a href="{{ page.permalink }}">Read more...</a>
+                        <a href="{{ page.permalink }}">read more...</a>
                     </div>
                 </div>
             {% endfor %}
@@ -46,10 +46,10 @@
         {% if paginator.previous or paginator.next %}
             <nav class="paginator">
                 {% if paginator.previous %}
-                    <a class="paginator-prev" href="{{ paginator.previous }}">‹ Previous</a>
+                    <a class="paginator-prev" href="{{ paginator.previous }}">‹ previous</a>
                 {% endif %}
                 {% if paginator.next %}
-                    <a class="paginator-next" href="{{ paginator.next }}">Next ›</a>
+                    <a class="paginator-next" href="{{ paginator.next }}">next ›</a>
                 {% endif %}
             </nav>
         {% endif %}
