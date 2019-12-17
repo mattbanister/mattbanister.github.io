@@ -1,6 +1,7 @@
 +++
 title = "rust shell"
 date = 2019-12-17
+draft = true
 
 [taxonomies] 
 categories = ["rust"] 
