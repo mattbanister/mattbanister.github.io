@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://mattbanister.github.io/sitemap.xml

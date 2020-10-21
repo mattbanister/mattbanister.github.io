@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://mattbanister.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/about/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/categories/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/categories/zola/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/tags/zola/</loc>
+    </url>
+    <url>
+        <loc>https://mattbanister.github.io/zola/</loc>
+        <lastmod>2019-12-16</lastmod>
+    </url>
+</urlset>
